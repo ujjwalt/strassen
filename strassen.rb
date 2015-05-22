@@ -154,3 +154,20 @@ class Matrix
     @cols == matrix.rows
   end
 end
+
+a = Matrix.new(2, 2, [1, 2, 3, 4])
+
+t = a.transpose
+puts "A"
+p a
+puts "T"
+p t
+puts "+"
+p a + a.transpose
+
+puts "-"
+p a - a.transpose
+
+
+puts "*"
+p a * a.transpose
